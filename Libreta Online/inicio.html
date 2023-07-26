@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libreta Online 1.0</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="img/libreta.jpg" width="200 px"> -->
+        <h1 id="titulo">Libreta Online</h1>
+        <h3 id="descripcion">
+            En esta pagina prodras dejar tus aporte y cualquier cosita que gustes, espero que sea con respeto, a su vez otra persona podra responder tu mensaje y podran interactuar
+        </h3>
+            <button id="registrarse"><a href="/registro.html">Registrarse</a></button>
+            <button id="iniciar"><a href="/inicio_sesion.html">Iniciar Sesión</a></button>
+        </h3>
+    </header>
+    <form id="formulario" action="/Comentarios" method="post">
+        <section id="Coment">
+            <div>
+                <label class="label" for="Nombre"><u>Nombre:</u></label>
+                <input class="input-nombre" type="text" id="Nombre"  name="Nombre" placeholder="Nombre" />
+            </div>
+            <div>
+                <label class="label" for="Comentario"><u>Comentario:</u></label>
+                <textarea class="input-comentario" cols="70" rows="5" name="Comentario" id="comentario" placeholder="Deja tu comentario"></textarea>
+            </div>
+            <button class="send_button">Enviar Comentario</button>
+        </section>
+        <section>
+            <table id="tabla">
+                <thead>
+                    <tr class="encabezado">
+                        <th>Usuarios</th>
+                        <th>Comentario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cuerpo">
+                        <th>Franco</th>
+                        <th>Hola, paso a dejar el primer comentario de la pagina</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </form>
+    <footer>
+        <article>
+        </article>
+    </footer>
+</body>
+</html>
